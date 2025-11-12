@@ -1,61 +1,100 @@
-# Smart Expense Splitter
+# 💸 Smart Expense Splitter
 
-A Java Swing application to **easily split expenses among friends** and keep track of balances. Each friend can see who owes what, and QR codes can be generated for quick payments.
-
----
-
-## Features
-
-- **Add Friend**: Quickly add friends to your expense list.  
-- **Add Expense**: Enter an amount and select the payer; the app automatically splits the expense among all friends.  
-- **Balances Table**: View each friend's balance with color coding:  
-  - **Green** → positive balance (money owed to them)  
-  - **Red** → negative balance (they owe money)  
-- **QR Code Generation**: Generate a QR code for each friend to simplify payments.
+A **Java Swing desktop application** to easily **split expenses among friends** and keep accurate track of who owes what.  
+The app also generates **QR codes** for quick and convenient payments.
 
 ---
 
-## Project Structure
+## ✨ Features
+
+- 🧑‍🤝‍🧑 **Add Friends** – Add friends to the shared expense list.  
+- 💰 **Add Expenses** – Enter an amount, choose the payer, and automatically split costs evenly among all friends.  
+- 📊 **Live Balances Table** – Instantly view each friend’s balance with clear color coding:  
+  - 🟩 **Green** – Positive balance (money owed to them)  
+  - 🟥 **Red** – Negative balance (they owe money)  
+- 📱 **QR Code Payments** – Generate QR codes for easy settlements between friends.  
+- 🧾 **Automatic Calculations** – Updates balances instantly after each transaction.  
+- 🧠 **Data Validation** – Ensures valid inputs and prevents empty or duplicate entries.
+
+---
+
+## 🗂️ Project Structure
+
+```yaml
 SmartExpenseSplitter/
 ├─ src/
-│  ├─ App.java      # Main class launching the GUI
-│  ├─ GUI.java      # Contains all GUI code, event handling, and QR generation
-│  └─ Friend.java   # Friend class storing name and balance
-└─ core-3.5.1.jar   # ZXing library for QR code generation
+│  ├─ App.java       # Main class that launches the GUI
+│  ├─ GUI.java       # Handles interface design, logic, and event actions
+│  └─ Friend.java    # Data model for storing friend names and balances
+└─ core-3.5.1.jar    # ZXing library for QR code generation
+```
+
+## ⚙️ Setup & Run
+
+### 1️⃣ Download Dependency
+Get the **ZXing Core JAR** file and place it in the project folder:  
+👉 [core-3.5.1.jar](https://repo1.maven.org/maven2/com/google/zxing/core/3.5.1/core-3.5.1.jar)
 
 ---
 
-## Setup & Run
-
-1. **Download ZXing Core Jar**:  
-   [core-3.5.1.jar](https://repo1.maven.org/maven2/com/google/zxing/core/3.5.1/core-3.5.1.jar) and place it in the project folder.
-
-2. **Compile the project**:
-
+### 2️⃣ Compile the Project
+Open a terminal in the project directory and run:
 ```bash
 javac -cp "src;core-3.5.1.jar" src\*.java
-```
-## Run the application
 
+## 3️⃣ Run the Application
 ```bash
 java -cp "src;core-3.5.1.jar" App
 ```
+## 🏗️ Example Commands
+# Compile
+javac -cp "src;core-3.5.1.jar" src\*.java
 
-## Usage
+# Run
+java -cp "src;core-3.5.1.jar" App
 
-1. Open the application.
-2. Add friends using the top panel.
-3. Add expenses using the middle panel (enter amount and select payer).
-4. View updated balances in the bottom table.
-5. Click **QR** next to any friend to generate a payment QR code.
+## 🧪 Example Output
+Friend Added: John  
+Expense Added: Ksh 300 - Paid by Jane  
+Balances Updated:  
+  John: -150.00  
+  Jane: +150.00  
 
-## Future Enhancements
+## 🧱 Version
+v1.0.0 – Initial stable release with friend management, expense splitting, and QR code generation.
 
-- Allow custom currency and formatting.
-- Add history of expenses.
-- Export balances to CSV or PDF.
-- Enable editing/deleting friends and expenses.
+## 🚀 Usage Guide
+- Launch the app.
+- Use the top panel to add friends.
+- Use the middle panel to add expenses and select the payer.
+- View automatically updated balances in the bottom table.
+- Click the QR button next to a friend’s name to generate their payment QR code.
 
-💡 Built with **Java Swing** for GUI and **ZXing** for QR code generation.
+💡 Tip: Keep the app open during group activities or trips for instant updates and accountability.
 
+## 🧭 Future Enhancements
+💵 Add custom currency and number formatting options.
+🕒 Maintain a history of expenses and settlements.
+📤 Export data to CSV or PDF reports.
+✏️ Allow editing/deleting friends and expenses.
+☁️ Add database or file saving support to persist data between sessions.
+🌐 Integrate mobile payment APIs (like M-Pesa or PayPal) for real transfers.
+🎨 Introduce a dark/light theme toggle for modern UI aesthetics.
+🔔 Add notification pop-ups when balances are updated or settled.
+🧮 Include custom split ratios (not always 50/50).
+📱 Future plan: Convert into a mobile app version using Kotlin or Flutter.
 
+## 🧰 Technologies Used
+🪟 Java Swing – For building the desktop graphical interface  
+🔳 ZXing (Zebra Crossing) – For QR code generation  
+🎨 Java AWT – For layout, event handling, and GUI rendering  
+☕ JVM 17+ – Compatible with the latest Java versions  
+
+## 🧑‍💻 Author
+👤 Name: Evans Mutharimi Buongo  
+🏫 University: Meru University of Science and Technology  
+📧 Contact: [evansbuongo@gmail.com]  
+
+## 🪄 License
+This project is released under the MIT License.  
+You’re free to use, modify, and distribute it with proper credit.  
