@@ -1,4 +1,3 @@
-
 public class Friend {
     private String name;
     private double balance;
