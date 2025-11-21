@@ -97,4 +97,12 @@ v1.0.0 – Initial stable release with friend management, expense splitting, and
 
 ## 🪄 License
 This project is released under the MIT License.  
-You’re free to use, modify, and distribute it with proper credit.  
+You’re free to use, modify, and distribute it with proper credit. 
+ 
+---
+
+If you found this helpful, give it a ⭐!
+
+<div align="center">
+
+### 🌟 **Thanks for Visiting!** 🌟
